@@ -3,33 +3,10 @@
 A full-stack **Task Management System** built with **React (frontend)** and **ASP.NET Core Web API (backend)**.  
 The system allows admins to create, assign, and track tasks with email notifications for due/overdue reminders.  
 
----
-
 ##  Project Overview
 
 This application helps teams organize tasks efficiently.  
 It includes features for user authentication, role-based task management, audit logging, and email notifications.
-
----
-
-##  Project Structure
-
-TaskManagement-Application/
-│
-├── frontend/ # React.js frontend (Vite)
-│ ├── src/
-│ ├── package.json
-│ └── vite.config.js
-│
-└── backend/ # ASP.NET Core Web API backend
-├── Controllers/
-├── Models/
-├── Services/
-├── Data/
-├── appsettings.json
-└── Program.cs
-
-
 
 
 ##  Tech Stack
