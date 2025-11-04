@@ -1,0 +1,324 @@
+2025-11-02 18:28:55.002 +05:30 [INF] User profile is available. Using 'C:\Users\madha\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-02 18:28:57.523 +05:30 [INF] Now listening on: https://localhost:7077
+2025-11-02 18:28:57.549 +05:30 [INF] Now listening on: http://localhost:5006
+2025-11-02 18:29:01.228 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-02 18:29:01.237 +05:30 [INF] Hosting environment: Development
+2025-11-02 18:29:01.241 +05:30 [INF] Content root path: C:\Users\madha\source\repos\Task_Management\Task_Management
+2025-11-02 18:29:10.713 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/swagger/index.html - null null
+2025-11-02 18:29:25.588 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/swagger/index.html - 200 null text/html;charset=utf-8 14936.3483ms
+2025-11-02 18:29:26.229 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-02 18:29:26.245 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/_vs/browserLink - null null
+2025-11-02 18:29:26.334 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript; charset=utf-8 105.1307ms
+2025-11-02 18:29:26.521 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/_vs/browserLink - 200 null text/javascript; charset=UTF-8 276.7628ms
+2025-11-02 18:29:26.710 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/swagger/v1/swagger.json - null null
+2025-11-02 18:29:26.751 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 41.7754ms
+2025-11-02 18:42:24.052 +05:30 [INF] User profile is available. Using 'C:\Users\madha\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-02 18:42:26.779 +05:30 [INF] Now listening on: https://localhost:7077
+2025-11-02 18:42:26.784 +05:30 [INF] Now listening on: http://localhost:5006
+2025-11-02 18:42:28.762 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-02 18:42:28.768 +05:30 [INF] Hosting environment: Development
+2025-11-02 18:42:28.955 +05:30 [INF] Content root path: C:\Users\madha\source\repos\Task_Management\Task_Management
+2025-11-02 18:42:35.348 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/swagger/index.html - null null
+2025-11-02 18:42:36.149 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/swagger/index.html - 200 null text/html;charset=utf-8 824.4124ms
+2025-11-02 18:42:36.205 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-02 18:42:36.245 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript; charset=utf-8 40.2152ms
+2025-11-02 18:42:36.322 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/_vs/browserLink - null null
+2025-11-02 18:42:36.595 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/_vs/browserLink - 200 null text/javascript; charset=UTF-8 273.0706ms
+2025-11-02 18:42:36.964 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/swagger/v1/swagger.json - null null
+2025-11-02 18:42:37.073 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 108.9871ms
+2025-11-02 19:09:46.999 +05:30 [INF] User profile is available. Using 'C:\Users\madha\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-02 19:09:48.053 +05:30 [INF] Now listening on: https://localhost:7077
+2025-11-02 19:09:48.058 +05:30 [INF] Now listening on: http://localhost:5006
+2025-11-02 19:09:48.314 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-02 19:09:48.319 +05:30 [INF] Hosting environment: Development
+2025-11-02 19:09:48.322 +05:30 [INF] Content root path: C:\Users\madha\source\repos\Task_Management\Task_Management
+2025-11-02 19:09:53.260 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/swagger/index.html - null null
+2025-11-02 19:09:54.342 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/swagger/index.html - 200 null text/html;charset=utf-8 1114.0594ms
+2025-11-02 19:09:54.512 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-02 19:09:54.532 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript; charset=utf-8 20.2636ms
+2025-11-02 19:09:54.703 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/_vs/browserLink - null null
+2025-11-02 19:09:54.892 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/_vs/browserLink - 200 null text/javascript; charset=UTF-8 188.9329ms
+2025-11-02 19:09:55.139 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/swagger/v1/swagger.json - null null
+2025-11-02 19:09:55.364 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 224.4668ms
+2025-11-02 19:31:54.000 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7077/api/auth/login - null null
+2025-11-02 19:31:54.130 +05:30 [INF] CORS policy execution failed.
+2025-11-02 19:31:54.133 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-11-02 19:31:54.145 +05:30 [INF] HTTP OPTIONS /api/auth/login responded 204 in 34.9841 ms
+2025-11-02 19:31:54.153 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7077/api/auth/login - 204 null null 160.9039ms
+2025-11-02 19:32:10.102 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7077/api/auth/register - null null
+2025-11-02 19:32:10.112 +05:30 [INF] CORS policy execution failed.
+2025-11-02 19:32:10.115 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-11-02 19:32:10.117 +05:30 [INF] HTTP OPTIONS /api/auth/register responded 204 in 6.2504 ms
+2025-11-02 19:32:10.121 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7077/api/auth/register - 204 null null 19.3561ms
+2025-11-02 19:33:08.093 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/api/tasks - null null
+2025-11-02 19:33:08.124 +05:30 [INF] CORS policy execution failed.
+2025-11-02 19:33:08.126 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-11-02 19:33:08.547 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-11-02 19:33:08.556 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-11-02 19:33:08.559 +05:30 [INF] HTTP GET /api/tasks responded 401 in 436.8310 ms
+2025-11-02 19:33:08.563 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/api/tasks - 401 0 null 513.1115ms
+2025-11-02 19:33:08.566 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/api/tasks - null null
+2025-11-02 19:33:08.577 +05:30 [INF] CORS policy execution failed.
+2025-11-02 19:33:08.579 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-11-02 19:33:08.586 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-11-02 19:33:08.589 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-11-02 19:33:08.591 +05:30 [INF] HTTP GET /api/tasks responded 401 in 14.2287 ms
+2025-11-02 19:33:08.594 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/api/tasks - 401 0 null 28.4108ms
+2025-11-02 19:46:15.082 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/api/tasks - null null
+2025-11-02 19:46:15.113 +05:30 [INF] CORS policy execution failed.
+2025-11-02 19:46:15.123 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-11-02 19:46:15.135 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-11-02 19:46:15.140 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-11-02 19:46:15.145 +05:30 [INF] HTTP GET /api/tasks responded 401 in 32.2275 ms
+2025-11-02 19:46:15.149 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/api/tasks - 401 0 null 67.9879ms
+2025-11-02 19:46:15.163 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/api/tasks - null null
+2025-11-02 19:46:15.183 +05:30 [INF] CORS policy execution failed.
+2025-11-02 19:46:15.184 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-11-02 19:46:15.188 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-11-02 19:46:15.191 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-11-02 19:46:15.193 +05:30 [INF] HTTP GET /api/tasks responded 401 in 10.1168 ms
+2025-11-02 19:46:15.197 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/api/tasks - 401 0 null 33.6613ms
+2025-11-02 19:46:39.082 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7077/api/tasks - null null
+2025-11-02 19:46:39.098 +05:30 [INF] CORS policy execution failed.
+2025-11-02 19:46:39.100 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-11-02 19:46:39.102 +05:30 [INF] HTTP OPTIONS /api/tasks responded 204 in 4.1797 ms
+2025-11-02 19:46:39.105 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7077/api/tasks - 204 null null 26.214ms
+2025-11-02 21:58:56.352 +05:30 [INF] User profile is available. Using 'C:\Users\madha\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-02 21:58:57.378 +05:30 [INF] Now listening on: https://localhost:7077
+2025-11-02 21:58:57.382 +05:30 [INF] Now listening on: http://localhost:5006
+2025-11-02 21:58:57.877 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-02 21:58:57.880 +05:30 [INF] Hosting environment: Development
+2025-11-02 21:58:57.882 +05:30 [INF] Content root path: C:\Users\madha\source\repos\Task_Management\Task_Management
+2025-11-02 21:59:00.267 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/swagger/index.html - null null
+2025-11-02 21:59:00.944 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/swagger/index.html - 200 null text/html;charset=utf-8 694.5303ms
+2025-11-02 21:59:01.001 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/_vs/browserLink - null null
+2025-11-02 21:59:01.002 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-02 21:59:01.080 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript; charset=utf-8 78.3312ms
+2025-11-02 21:59:01.241 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/_vs/browserLink - 200 null text/javascript; charset=UTF-8 239.7044ms
+2025-11-02 21:59:01.338 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/swagger/v1/swagger.json - null null
+2025-11-02 21:59:01.435 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 97.1367ms
+2025-11-02 22:05:10.783 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/api/tasks - null null
+2025-11-02 22:05:11.202 +05:30 [INF] CORS policy execution failed.
+2025-11-02 22:05:11.207 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-11-02 22:05:11.860 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-11-02 22:05:11.879 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-11-02 22:05:11.893 +05:30 [INF] HTTP GET /api/tasks responded 401 in 782.5548 ms
+2025-11-02 22:05:11.908 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/api/tasks - 401 0 null 1142.1737ms
+2025-11-02 22:05:11.919 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/api/tasks - null null
+2025-11-02 22:05:11.931 +05:30 [INF] CORS policy execution failed.
+2025-11-02 22:05:11.934 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-11-02 22:05:11.943 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-11-02 22:05:11.946 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-11-02 22:05:11.949 +05:30 [INF] HTTP GET /api/tasks responded 401 in 18.2728 ms
+2025-11-02 22:05:11.952 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/api/tasks - 401 0 null 33.2536ms
+2025-11-02 22:06:30.561 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7077/api/tasks - null null
+2025-11-02 22:06:30.591 +05:30 [INF] CORS policy execution failed.
+2025-11-02 22:06:30.593 +05:30 [INF] Request origin http://localhost:5173 does not have permission to access the resource.
+2025-11-02 22:06:30.607 +05:30 [INF] HTTP OPTIONS /api/tasks responded 204 in 16.4879 ms
+2025-11-02 22:06:30.617 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7077/api/tasks - 204 null null 56.3595ms
+2025-11-02 22:12:13.830 +05:30 [INF] User profile is available. Using 'C:\Users\madha\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-02 22:12:14.581 +05:30 [INF] Now listening on: https://localhost:7077
+2025-11-02 22:12:14.585 +05:30 [INF] Now listening on: http://localhost:5006
+2025-11-02 22:12:14.824 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-02 22:12:14.826 +05:30 [INF] Hosting environment: Development
+2025-11-02 22:12:14.832 +05:30 [INF] Content root path: C:\Users\madha\source\repos\Task_Management\Task_Management
+2025-11-02 22:12:16.993 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/swagger/index.html - null null
+2025-11-02 22:12:17.613 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/swagger/index.html - 200 null text/html;charset=utf-8 645.6651ms
+2025-11-02 22:12:17.641 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-02 22:12:17.641 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/_vs/browserLink - null null
+2025-11-02 22:12:17.678 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript; charset=utf-8 37.5715ms
+2025-11-02 22:12:17.881 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/_vs/browserLink - 200 null text/javascript; charset=UTF-8 240.747ms
+2025-11-02 22:12:17.963 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/swagger/v1/swagger.json - null null
+2025-11-02 22:12:18.029 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 66.1783ms
+2025-11-02 22:15:39.107 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/api/tasks - null null
+2025-11-02 22:15:39.388 +05:30 [INF] CORS policy execution successful.
+2025-11-02 22:15:39.741 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-11-02 22:15:39.761 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-11-02 22:15:39.777 +05:30 [INF] HTTP GET /api/tasks responded 401 in 431.8035 ms
+2025-11-02 22:15:39.796 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/api/tasks - 401 0 null 700.2276ms
+2025-11-02 22:15:39.806 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/api/tasks - null null
+2025-11-02 22:15:39.837 +05:30 [INF] CORS policy execution successful.
+2025-11-02 22:15:39.858 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-11-02 22:15:39.864 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-11-02 22:15:39.871 +05:30 [INF] HTTP GET /api/tasks responded 401 in 36.9569 ms
+2025-11-02 22:15:39.879 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/api/tasks - 401 0 null 75.1452ms
+2025-11-02 22:16:39.100 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/api/tasks - null null
+2025-11-02 22:16:39.210 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-11-02 22:16:39.216 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2025-11-02 22:16:39.220 +05:30 [INF] HTTP GET /api/tasks responded 401 in 15.1358 ms
+2025-11-02 22:16:39.232 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/api/tasks - 401 0 null 132.8651ms
+2025-11-02 22:18:38.175 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7077/api/Auth/login - application/json 147
+2025-11-02 22:18:38.187 +05:30 [INF] CORS policy execution failed.
+2025-11-02 22:18:38.191 +05:30 [INF] Request origin https://localhost:7077 does not have permission to access the resource.
+2025-11-02 22:18:38.207 +05:30 [INF] Executing endpoint 'Task_Management.Controllers.AuthController.Login (Task_Management)'
+2025-11-02 22:18:38.515 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Task_Management.Models.User) on controller Task_Management.Controllers.AuthController (Task_Management).
+2025-11-02 22:18:39.305 +05:30 [INF] Executed action Task_Management.Controllers.AuthController.Login (Task_Management) in 769.7452ms
+2025-11-02 22:18:39.316 +05:30 [INF] Executed endpoint 'Task_Management.Controllers.AuthController.Login (Task_Management)'
+2025-11-02 22:18:39.321 +05:30 [ERR] HTTP POST /api/Auth/login responded 500 in 1134.9047 ms
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.IPasswordHasher`1[Task_Management.Models.User]' while attempting to activate 'Task_Management.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method4(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2025-11-02 22:18:39.467 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.AspNetCore.Identity.IPasswordHasher`1[Task_Management.Models.User]' while attempting to activate 'Task_Management.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method4(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-11-02 22:18:39.513 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7077/api/Auth/login - 500 null text/plain; charset=utf-8 1339.7145ms
+2025-11-02 22:34:20.529 +05:30 [INF] User profile is available. Using 'C:\Users\madha\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-11-02 22:34:21.557 +05:30 [INF] Now listening on: https://localhost:7077
+2025-11-02 22:34:21.561 +05:30 [INF] Now listening on: http://localhost:5006
+2025-11-02 22:34:21.792 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-02 22:34:21.794 +05:30 [INF] Hosting environment: Development
+2025-11-02 22:34:21.797 +05:30 [INF] Content root path: C:\Users\madha\source\repos\Task_Management\Task_Management
+2025-11-02 22:34:23.776 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/swagger/index.html - null null
+2025-11-02 22:34:25.042 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/swagger/index.html - 200 null text/html;charset=utf-8 1286.3051ms
+2025-11-02 22:34:25.089 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-02 22:34:25.089 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/_vs/browserLink - null null
+2025-11-02 22:34:25.124 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/_framework/aspnetcore-browser-refresh.js - 200 16515 application/javascript; charset=utf-8 34.5288ms
+2025-11-02 22:34:25.227 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/_vs/browserLink - 200 null text/javascript; charset=UTF-8 138.5845ms
+2025-11-02 22:34:25.326 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7077/swagger/v1/swagger.json - null null
+2025-11-02 22:34:25.406 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7077/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 80.2868ms
+2025-11-02 22:36:45.086 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7077/api/Auth/login - application/json 147
+2025-11-02 22:36:45.123 +05:30 [INF] CORS policy execution failed.
+2025-11-02 22:36:45.128 +05:30 [INF] Request origin https://localhost:7077 does not have permission to access the resource.
+2025-11-02 22:36:45.346 +05:30 [INF] Executing endpoint 'Task_Management.Controllers.AuthController.Login (Task_Management)'
+2025-11-02 22:36:45.431 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Task_Management.Models.User) on controller Task_Management.Controllers.AuthController (Task_Management).
+2025-11-02 22:36:50.824 +05:30 [INF] Executed DbCommand (288ms) [Parameters=[@__login_Email_0='?' (Size = 150)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[Id], [u].[CreatedDate], [u].[Email], [u].[Name], [u].[PasswordHash], [u].[Role]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__login_Email_0
+2025-11-02 22:36:50.902 +05:30 [INF] Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2025-11-02 22:36:50.927 +05:30 [INF] Executed action Task_Management.Controllers.AuthController.Login (Task_Management) in 5480.8455ms
+2025-11-02 22:36:50.932 +05:30 [INF] Executed endpoint 'Task_Management.Controllers.AuthController.Login (Task_Management)'
+2025-11-02 22:36:50.949 +05:30 [INF] HTTP POST /api/Auth/login responded 401 in 5824.5475 ms
+2025-11-02 22:36:50.973 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7077/api/Auth/login - 401 null text/plain; charset=utf-8 5888.4834ms
+2025-11-02 22:39:06.599 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7077/api/auth/register - null null
+2025-11-02 22:39:06.649 +05:30 [INF] CORS policy execution successful.
+2025-11-02 22:39:06.656 +05:30 [INF] HTTP OPTIONS /api/auth/register responded 204 in 9.3426 ms
+2025-11-02 22:39:06.666 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7077/api/auth/register - 204 null null 67.5136ms
+2025-11-02 22:39:06.672 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7077/api/auth/register - application/json 72
+2025-11-02 22:39:06.690 +05:30 [INF] CORS policy execution successful.
+2025-11-02 22:39:06.697 +05:30 [INF] Executing endpoint 'Task_Management.Controllers.AuthController.Register (Task_Management)'
+2025-11-02 22:39:06.707 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(Task_Management.Models.User) on controller Task_Management.Controllers.AuthController (Task_Management).
+2025-11-02 22:39:06.733 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-02 22:39:06.820 +05:30 [INF] Executed action Task_Management.Controllers.AuthController.Register (Task_Management) in 107.6596ms
+2025-11-02 22:39:06.826 +05:30 [INF] Executed endpoint 'Task_Management.Controllers.AuthController.Register (Task_Management)'
+2025-11-02 22:39:06.831 +05:30 [INF] HTTP POST /api/auth/register responded 400 in 141.1573 ms
+2025-11-02 22:39:06.838 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7077/api/auth/register - 400 null application/problem+json; charset=utf-8 166.4958ms
+2025-11-02 22:40:42.588 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7077/api/Auth/register - application/json 147
+2025-11-02 22:40:42.616 +05:30 [INF] CORS policy execution failed.
+2025-11-02 22:40:42.619 +05:30 [INF] Request origin https://localhost:7077 does not have permission to access the resource.
+2025-11-02 22:40:42.629 +05:30 [INF] Executing endpoint 'Task_Management.Controllers.AuthController.Register (Task_Management)'
+2025-11-02 22:40:42.633 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(Task_Management.Models.User) on controller Task_Management.Controllers.AuthController (Task_Management).
+2025-11-02 22:40:42.841 +05:30 [INF] Executed DbCommand (39ms) [Parameters=[@__user_Email_0='?' (Size = 150)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__user_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-11-02 22:40:43.691 +05:30 [INF] Executed DbCommand (101ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 150), @p2='?' (Size = 100), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedDate], [Email], [Name], [PasswordHash], [Role])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-11-02 22:40:43.755 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-11-02 22:40:43.762 +05:30 [INF] Executed action Task_Management.Controllers.AuthController.Register (Task_Management) in 1121.7751ms
+2025-11-02 22:40:43.769 +05:30 [INF] Executed endpoint 'Task_Management.Controllers.AuthController.Register (Task_Management)'
+2025-11-02 22:40:43.773 +05:30 [INF] HTTP POST /api/Auth/register responded 200 in 1156.4537 ms
+2025-11-02 22:40:43.782 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7077/api/Auth/register - 200 null text/plain; charset=utf-8 1194.7316ms
+2025-11-02 22:41:54.602 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7077/api/Auth/register - application/json 164
+2025-11-02 22:41:54.632 +05:30 [INF] CORS policy execution failed.
+2025-11-02 22:41:54.636 +05:30 [INF] Request origin https://localhost:7077 does not have permission to access the resource.
+2025-11-02 22:41:54.640 +05:30 [INF] Executing endpoint 'Task_Management.Controllers.AuthController.Register (Task_Management)'
+2025-11-02 22:41:54.644 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(Task_Management.Models.User) on controller Task_Management.Controllers.AuthController (Task_Management).
+2025-11-02 22:41:54.676 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-02 22:41:54.694 +05:30 [INF] Executed action Task_Management.Controllers.AuthController.Register (Task_Management) in 42.0786ms
+2025-11-02 22:41:54.698 +05:30 [INF] Executed endpoint 'Task_Management.Controllers.AuthController.Register (Task_Management)'
+2025-11-02 22:41:54.701 +05:30 [INF] HTTP POST /api/Auth/register responded 400 in 68.8354 ms
+2025-11-02 22:41:54.708 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7077/api/Auth/register - 400 null application/problem+json; charset=utf-8 107.5237ms
+2025-11-02 22:43:43.291 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7077/api/Auth/register - application/json 165
+2025-11-02 22:43:43.301 +05:30 [INF] CORS policy execution failed.
+2025-11-02 22:43:43.304 +05:30 [INF] Request origin https://localhost:7077 does not have permission to access the resource.
+2025-11-02 22:43:43.308 +05:30 [INF] Executing endpoint 'Task_Management.Controllers.AuthController.Register (Task_Management)'
+2025-11-02 22:43:43.311 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register(Task_Management.Models.User) on controller Task_Management.Controllers.AuthController (Task_Management).
+2025-11-02 22:43:43.620 +05:30 [INF] Executed DbCommand (81ms) [Parameters=[@__user_Email_0='?' (Size = 150)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__user_Email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-11-02 22:43:43.902 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 150), @p2='?' (Size = 100), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedDate], [Email], [Name], [PasswordHash], [Role])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2025-11-02 22:43:43.910 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-11-02 22:43:43.915 +05:30 [INF] Executed action Task_Management.Controllers.AuthController.Register (Task_Management) in 597.0363ms
+2025-11-02 22:43:43.929 +05:30 [INF] Executed endpoint 'Task_Management.Controllers.AuthController.Register (Task_Management)'
+2025-11-02 22:43:43.932 +05:30 [INF] HTTP POST /api/Auth/register responded 200 in 631.8592 ms
+2025-11-02 22:43:43.945 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7077/api/Auth/register - 200 null text/plain; charset=utf-8 656.1519ms
+2025-11-02 22:44:14.041 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7077/api/auth/login - null null
+2025-11-02 22:44:14.064 +05:30 [INF] CORS policy execution successful.
+2025-11-02 22:44:14.068 +05:30 [INF] HTTP OPTIONS /api/auth/login responded 204 in 3.5915 ms
+2025-11-02 22:44:14.076 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7077/api/auth/login - 204 null null 35.6482ms
+2025-11-02 22:44:14.080 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7077/api/auth/login - application/json 52
+2025-11-02 22:44:14.103 +05:30 [INF] CORS policy execution successful.
+2025-11-02 22:44:14.106 +05:30 [INF] Executing endpoint 'Task_Management.Controllers.AuthController.Login (Task_Management)'
+2025-11-02 22:44:14.112 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Task_Management.Models.User) on controller Task_Management.Controllers.AuthController (Task_Management).
+2025-11-02 22:44:14.123 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-02 22:44:14.129 +05:30 [INF] Executed action Task_Management.Controllers.AuthController.Login (Task_Management) in 8.6063ms
+2025-11-02 22:44:14.139 +05:30 [INF] Executed endpoint 'Task_Management.Controllers.AuthController.Login (Task_Management)'
+2025-11-02 22:44:14.144 +05:30 [INF] HTTP POST /api/auth/login responded 400 in 41.3999 ms
+2025-11-02 22:44:14.153 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7077/api/auth/login - 400 null application/problem+json; charset=utf-8 73.9013ms
+2025-11-02 22:44:22.930 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7077/api/auth/login - null null
+2025-11-02 22:44:22.940 +05:30 [INF] CORS policy execution successful.
+2025-11-02 22:44:22.943 +05:30 [INF] HTTP OPTIONS /api/auth/login responded 204 in 3.1312 ms
+2025-11-02 22:44:22.950 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7077/api/auth/login - 204 null null 20.9574ms
+2025-11-02 22:44:22.954 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7077/api/auth/login - application/json 54
+2025-11-02 22:44:22.975 +05:30 [INF] CORS policy execution successful.
+2025-11-02 22:44:22.978 +05:30 [INF] Executing endpoint 'Task_Management.Controllers.AuthController.Login (Task_Management)'
+2025-11-02 22:44:22.983 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(Task_Management.Models.User) on controller Task_Management.Controllers.AuthController (Task_Management).
+2025-11-02 22:44:22.992 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-02 22:44:22.998 +05:30 [INF] Executed action Task_Management.Controllers.AuthController.Login (Task_Management) in 7.0736ms
+2025-11-02 22:44:23.005 +05:30 [INF] Executed endpoint 'Task_Management.Controllers.AuthController.Login (Task_Management)'
+2025-11-02 22:44:23.008 +05:30 [INF] HTTP POST /api/auth/login responded 400 in 32.6325 ms
+2025-11-02 22:44:23.015 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7077/api/auth/login - 400 null application/problem+json; charset=utf-8 61.4471ms
