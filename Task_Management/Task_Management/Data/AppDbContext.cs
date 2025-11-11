@@ -19,7 +19,12 @@ namespace Task_Management.Data
         {
             base.OnModelCreating(modelBuilder);
 
-
+            modelBuilder.Entity<TaskItem>()
+                .Property(t => t.AssignedTo)
+                .HasConversion(
+                    v => string.Join(",", v),         
+                    v => v.Split(',', StringSplitOptions.RemoveEmptyEntries).ToList() 
+                );
         }
     }
 }

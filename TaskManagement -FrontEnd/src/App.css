@@ -1,3 +1,5 @@
+naa css send panran athula changes kudu
+/* ---------- Global Styles ---------- */
 body {
   font-family: "Poppins", sans-serif;
   background: #f6f8fc;
@@ -5,6 +7,7 @@ body {
   padding: 0;
 }
 
+/* ---------- Login / Register ---------- */
 .login-container,
 .register-container {
   display: flex;
@@ -80,6 +83,7 @@ body {
   background-color: #005fa3;
 }
 
+/* ---------- Task Page ---------- */
 .tasks-page-container {
   padding: 40px;
   min-height: 100vh;
@@ -90,6 +94,8 @@ body {
   text-align: center;
   margin-bottom: 30px;
   color: #333;
+  font-size: 26px;
+  font-weight: 600;
 }
 
 .tasks-topbar {
@@ -128,42 +134,91 @@ body {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
-.task-table-card {
+/* ---------- Task Table ---------- */
+.task-table-container {
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
-  margin: 0 auto;
-  padding: 5px;
-  overflow-x: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
-.styled-table {
+/* Make table clean and evenly spaced */
+.task-table {
   width: 100%;
+  table-layout: fixed;
   border-collapse: collapse;
-  font-size: 14px;
+  font-size: 13.5px;
+}
+
+/* Table borders & spacing */
+.task-table th,
+.task-table td {
+  padding: 12px 10px;
+  border: 1px solid #e1e5ec;
   text-align: center;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
-.styled-table th,
-.styled-table td {
-  padding: 12px 16px;
-  border-bottom: 1px solid #e0e0e0;
-  vertical-align: middle;
-}
-
-.styled-table th {
-  background-color: #f3f5fa;
+.task-table th {
+  background-color: #f1f5fb;
   color: #333;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 13px;
 }
 
-.styled-table tr:hover {
-  background-color: #f9fbff;
-  transition: background 0.3s ease;
+/* ✅ Row hover highlight */
+.task-table tbody tr:hover {
+  background-color: #eef6ff;
+  transition: 0.2s ease;
 }
 
+/* ✅ Alternate row color */
+.task-table tbody tr:nth-child(even) {
+  background-color: #fafcff;
+}
+
+/* ✅ Action column width fix */
+.task-table th:last-child,
+.task-table td:last-child {
+  width: 140px;
+}
+
+/* ✅ Buttons in table */
+.edit-btn,
+.delete-btn {
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 12.5px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  margin: 2px;
+}
+
+.edit-btn {
+  background-color: #fbbf24;
+  color: #222;
+}
+
+.edit-btn:hover {
+  background-color: #d39e00;
+}
+
+.delete-btn {
+  background-color: #ef4444;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* ✅ Status badges */
 .status-badge {
   display: inline-block;
   padding: 6px 10px;
@@ -177,106 +232,23 @@ body {
 .status-badge.pending {
   background-color: #f59e0b;
 }
+
 .status-badge.in-progress {
   background-color: #0ea5e9;
 }
+
 .status-badge.completed {
   background-color: #10b981;
 }
 
-.action-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-    height: 100%;    
-
+/* ✅ Sticky header (optional) */
+.task-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
-.read-btn,
-.edit-btn,
-.delete-btn {
-  border: none;
-  border-radius: 6px;
-  padding: 6px 14px;
-  font-size: 13px;
-  font-weight: 500;
-  cursor: pointer;
-  color: #fff;
-  transition: all 0.2s ease-in-out;
-}
-
-.read-btn {
-  background-color: #007bff;
-}
-.read-btn:hover {
-  background-color: #0056b3;
-}
-
-.edit-btn {
-  background-color: #fbbf24;
-  color: #222;
-}
-.edit-btn:hover {
-  background-color: #d39e00;
-}
-
-.delete-btn {
-  background-color: #ef4444;
-}
-.delete-btn:hover {
-  background-color: #c82333;
-}
-
-.task-modal-container {
-  background: white;
-  border-radius: 10px;
-  width: 600px;
-  padding: 20px 25px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-  position: relative;
-  animation: fadeIn 0.3s ease;
-}
-
-.task-modal-body label {
-  font-weight: 600;
-  font-size: 13px;
-  display: block;
-  margin-bottom: 4px;
-  color: #333;
-}
-
-.task-modal-body input,
-.task-modal-body textarea,
-.task-modal-body select {
-  width: 100%;
-  padding: 7px 8px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
-  font-size: 13px;
-}
-
-.task-modal-header h3 {
-  font-size: 18px;
-}
-
-.save-btn,
-.cancel-btn {
-  font-size: 13px;
-  padding: 8px 14px;
-}
-
-@keyframes fadeIn {
-  from {
-    transform: scale(0.95);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
+/* ---------- Modal ---------- */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -370,13 +342,292 @@ body {
   cursor: pointer;
 }
 
+/* ---------- Animations ---------- */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideIn {
-  from { transform: translateY(-15px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(-15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.multi-email-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
 }
 
+.email-tag {
+  background: #0078d4;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.remove-email {
+  background: transparent;
+  border: none;
+  color: white;
+  margin-left: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.email-suggestions {
+  margin-top: 4px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.suggestion-item {
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f8ff;
+}
+.email-select .react-select__control {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  min-height: 40px;
+}
+
+.email-select .react-select__multi-value {
+  background-color: #0078d4;
+  color: white;
+  border-radius: 6px;
+}
+.task-table-container {
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.task-table th,
+.task-table td {
+  text-align: left;
+  padding: 12px 10px;
+  border: 1px solid #e4e7eb;
+  vertical-align: top;
+}
+
+.assigned-column {
+  width: 250px;
+}
+
+.assigned-to-cell {
+  white-space: normal;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.assigned-email {
+  padding: 4px 4px;
+  margin: 3px 0;
+  border-radius: 6px;
+  display: inline-block;
+  width: 100%;
+  background-color: #f0f4ff;
+  color: #333;
+}
+
+.task-row:hover {
+  background-color: #f8faff;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+/* Status badges */
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-weight: 600;
+  color: #fff;
+}
+.status-pending {
+  background-color: #f39c12;
+}
+.status-progress {
+  background-color: #00aaff;
+}
+.status-completed {
+  background-color: #2ecc71;
+}
+
+.action-buttons button {
+  margin-right: 5px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+.edit-btn {
+  background-color: #f1c40f;
+  color: #000;
+}
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+} 
+.task-table th:nth-child(1),
+.task-table td:nth-child(1) {
+  width: 20px; /* ID */
+}
+.task-table th:nth-child(2),
+.task-table td:nth-child(2) {
+  width: 80px; /* Title */
+}
+.task-table th:nth-child(3),
+.task-table td:nth-child(3) {
+  width: 150px; /* Description */
+}
+.task-table th:nth-child(4),
+.task-table td:nth-child(4) {
+  width: 170px; /* Assigned To */
+  white-space: normal;
+}
+.task-table th:nth-child(5),
+.task-table td:nth-child(5) {
+  width: 75px; /* Status */
+}
+.task-table th:nth-child(6),
+.task-table td:nth-child(6) {
+  width: 70px; /* Priority */
+}
+.task-table th:nth-child(7),
+.task-table td:nth-child(7) {
+  width: 70px; /* Due Date */
+}
+.task-table th:nth-child(8),
+.task-table td:nth-child(8) {
+  width: 70px; /* Created By */
+}
+.task-table th:nth-child(9),
+.task-table td:nth-child(9),
+.task-table th:nth-child(10),
+.task-table td:nth-child(10) {
+  width: 50px; /* Created/Updated Date */
+  white-space: nowrap;
+}
+.task-table th:nth-child(11),
+.task-table td:nth-child(11) {
+  width: 130px; /* Actions */
+  text-align: center;
+}
+.user-menu-container {
+  position: relative;
+  display: inline-block;
+}
+
+.user-icon {
+  cursor: pointer;
+  color: #0078d4;
+  transition: 0.3s;
+}
+
+.user-icon:hover {
+  color: #0056b3;
+}
+
+/* Dropdown box */
+.user-dropdown {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  min-width: 200px;
+  padding: 10px;
+  z-index: 10;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.user-email {
+  font-size: 14px;
+  color: #333;
+  padding: 6px 8px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 8px;
+  word-wrap: break-word;
+}
+
+.logout-btn {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 13px;
+  transition: 0.2s;
+}
+
+.logout-btn:hover {
+  background-color: #0056b3;
+}
+.status-filter-container {
+  position: relative;
+  display: inline-block;
+
+}
+.status-item {
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+ .status-box {
+  display: flex;
+  gap: 10px;
+  padding: 8px; 
+  }
+
+  .status-dropdown {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    min-width: 140px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius:8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    padding: 10px;
+    z-index: 10;
+    animation: fadeIn 0.2s ease-in-out;
+
+  }

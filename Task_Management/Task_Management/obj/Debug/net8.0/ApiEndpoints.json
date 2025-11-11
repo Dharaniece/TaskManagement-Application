@@ -42,6 +42,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Task_Management.Controllers.AuthController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/Auth/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Task_Management.Controllers.NotificationsController",
     "Method": "SendDueReminders",
     "RelativePath": "api/Notifications/send-due-reminders",
@@ -70,8 +80,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "newTask",
-        "Type": "TaskItem",
+        "Name": "dto",
+        "Type": "Task_Management.DTOs.TaskCreateDto",
         "IsRequired": true
       }
     ],
@@ -107,8 +117,8 @@
         "IsRequired": true
       },
       {
-        "Name": "updatedTask",
-        "Type": "TaskItem",
+        "Name": "dto",
+        "Type": "Task_Management.DTOs.TaskUpdateDto",
         "IsRequired": true
       }
     ],

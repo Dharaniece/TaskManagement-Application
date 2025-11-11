@@ -30,39 +30,49 @@ namespace Task_Management.Services
                         var today = DateTime.UtcNow.Date;
                         var tomorrow = today.AddDays(1);
 
+                        // 🔹 Fetch tasks due today or tomorrow
                         var dueTasks = await db.Tasks
                             .Where(t => t.DueDate.HasValue &&
-                                (t.DueDate.Value.Date == today || t.DueDate.Value.Date == tomorrow))
-                            .Include(t => t.AssignedTo)
+                                        (t.DueDate.Value.Date == today || t.DueDate.Value.Date == tomorrow))
                             .ToListAsync(stoppingToken);
 
                         foreach (var task in dueTasks)
                         {
-                            var user = await db.Users.FirstOrDefaultAsync(u => u.Email == task.AssignedTo);
-                            if (user != null && !string.IsNullOrEmpty(user.Email))
+                            // 🔹 Skip if no assigned members
+                            if (task.AssignedTo == null || !task.AssignedTo.Any())
+                                continue;
+
+                            // 🔹 Send reminder to each assigned email
+                            foreach (var email in task.AssignedTo)
                             {
+                                if (string.IsNullOrWhiteSpace(email)) continue;
+
                                 string subject = $"⏰ Task Reminder: '{task.Title}' is due soon!";
                                 string body = $@"
-Hi {user.Email},
-Your task '{task.Title}' is due on {task.DueDate:yyyy-MM-dd}.
+Hi {email},
+
+Your assigned task '{task.Title}' is due on {task.DueDate:yyyy-MM-dd}.
 Priority: {task.Priority}
-Please complete or update the status.
+Status: {task.Status}
+
+Please complete or update the task in the Task Management System.
 
 Regards,
-Task Management System";
+Task Management Team";
 
-                                await emailService.SendEmailAsync(user.Email, subject, body);
+                                await emailService.SendEmailAsync(email, subject, body);
                             }
                         }
 
-                        _logger.LogInformation($"📬 Sent reminders for {dueTasks.Count} tasks.");
+                        _logger.LogInformation($"📬 Sent reminders for {dueTasks.Count} due tasks.");
                     }
                 }
                 catch (Exception ex)
                 {
-                    _logger.LogError(ex, "Error sending due task reminders.");
+                    _logger.LogError(ex, "❌ Error sending due task reminders.");
                 }
 
+                // Wait for 24 hours before next check
                 await Task.Delay(TimeSpan.FromHours(24), stoppingToken);
             }
         }

@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 using Task_Management.Data;
+using Task_Management.DTOs;
 using Task_Management.Models;
 using Task_Management.Services;
-using System.Security.Claims; 
 
 namespace Task_Management.Controllers
 {
@@ -22,11 +23,13 @@ namespace Task_Management.Controllers
             _audit = audit;
         }
 
-        private string GetUserEmail()
-        {
-            return User.FindFirst(ClaimTypes.Email)?.Value ?? "Unknown User";
-        }
+        private string GetUserEmail() =>
+            User.FindFirst(ClaimTypes.Email)?.Value ?? "Unknown User";
 
+        private string GetUserRole() =>
+            User.FindFirst(ClaimTypes.Role)?.Value ?? "User";
+
+        // GET: api/tasks
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
@@ -34,75 +37,135 @@ namespace Task_Management.Controllers
                 .OrderByDescending(t => t.CreatedDate)
                 .ToListAsync();
 
-            return Ok(tasks);
+            var result = tasks.Select(t => new
+            {
+                t.Id,
+                t.Title,
+                t.Description,
+                AssignedTo = !string.IsNullOrEmpty(t.AssignedToSerialized)
+                    ? t.AssignedToSerialized.Split(',', StringSplitOptions.RemoveEmptyEntries)
+                    : new string[] { },
+                t.Status,
+                t.Priority,
+                t.DueDate,
+                t.CreatedBy,
+                t.CreatedDate,
+                t.UpdatedDate
+            });
+
+            return Ok(result);
         }
 
+        // GET: api/tasks/{id}
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var task = await _context.Tasks.FirstOrDefaultAsync(t => t.Id == id);
-            if (task == null)
-                return NotFound();
+            var task = await _context.Tasks.FindAsync(id);
+            if (task == null) return NotFound();
 
-            return Ok(task);
+            var result = new
+            {
+                task.Id,
+                task.Title,
+                task.Description,
+                AssignedTo = !string.IsNullOrEmpty(task.AssignedToSerialized)
+                    ? task.AssignedToSerialized.Split(',', StringSplitOptions.RemoveEmptyEntries)
+                    : new string[] { },
+                task.Status,
+                task.Priority,
+                task.DueDate,
+                task.CreatedBy,
+                task.CreatedDate,
+                task.UpdatedDate
+            };
+
+            return Ok(result);
         }
 
+        // POST: api/tasks
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] TaskItem newTask)
+        public async Task<IActionResult> Create([FromBody] TaskCreateDto dto)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+            if (string.IsNullOrWhiteSpace(dto.Title))
+                return BadRequest(new { Title = "Title is required." });
 
-            newTask.CreatedDate = DateTime.UtcNow;
+            var newTask = new TaskItem
+            {
+                Title = dto.Title.Trim(),
+                Description = dto.Description?.Trim(),
+                AssignedToSerialized = dto.AssignedTo != null && dto.AssignedTo.Any()
+                    ? string.Join(",", dto.AssignedTo)
+                    : null,
+                Status = dto.Status ?? "Pending",
+                Priority = dto.Priority ?? "Medium",
+                DueDate = dto.DueDate,
+                CreatedBy = dto.CreatedBy ?? GetUserEmail(),
+                CreatedDate = DateTime.UtcNow
+            };
+
             _context.Tasks.Add(newTask);
             await _context.SaveChangesAsync();
+
+            var assignedNames = dto.AssignedTo != null && dto.AssignedTo.Any()
+                ? string.Join(", ", dto.AssignedTo)
+                : "none";
 
             _audit.Log(
                 GetUserEmail(),
                 "Created",
                 "Task",
-                $"Task '{newTask.Title}' assigned to {newTask.AssignedTo ?? "none"}"
+                $"Task '{newTask.Title}' assigned to {assignedNames}"
             );
 
             return CreatedAtAction(nameof(GetById), new { id = newTask.Id }, newTask);
         }
 
+        // PUT: api/tasks/{id}
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] TaskItem updatedTask)
+        public async Task<IActionResult> Update(int id, [FromBody] TaskUpdateDto dto)
         {
             var task = await _context.Tasks.FindAsync(id);
-            if (task == null)
-                return NotFound();
+            if (task == null) return NotFound();
 
-            var oldTitle = task.Title;
-            var oldStatus = task.Status;
+            var role = GetUserRole();
 
-            task.Title = updatedTask.Title;
-            task.Description = updatedTask.Description;
-            task.AssignedTo = updatedTask.AssignedTo;
-            task.Status = updatedTask.Status;
-            task.Priority = updatedTask.Priority;
-            task.DueDate = updatedTask.DueDate;
+            if (role == "Admin")
+            {
+                task.Title = dto.Title ?? task.Title;
+                task.Description = dto.Description ?? task.Description;
+                task.AssignedToSerialized = dto.AssignedTo != null && dto.AssignedTo.Any()
+                    ? string.Join(",", dto.AssignedTo)
+                    : task.AssignedToSerialized;
+                task.Status = dto.Status ?? task.Status;
+                task.Priority = dto.Priority ?? task.Priority;
+                task.DueDate = dto.DueDate ?? task.DueDate;
+            }
+            else
+            {
+                // normal user can update only status
+                if (!string.IsNullOrEmpty(dto.Status))
+                    task.Status = dto.Status;
+            }
+
             task.UpdatedDate = DateTime.UtcNow;
-
             await _context.SaveChangesAsync();
 
             _audit.Log(
                 GetUserEmail(),
                 "Updated",
                 "Task",
-                $"Task '{oldTitle}' status changed from '{oldStatus}' to '{task.Status}'."
+                $"Task '{task.Title}' updated. Status: {task.Status}"
             );
 
             return Ok(task);
         }
 
+        // DELETE: api/tasks/{id}
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             var task = await _context.Tasks.FindAsync(id);
-            if (task == null)
-                return NotFound();
+            if (task == null) return NotFound();
 
             _context.Tasks.Remove(task);
             await _context.SaveChangesAsync();

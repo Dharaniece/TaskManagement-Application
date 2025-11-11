@@ -6525,11 +6525,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\madha\\source\\repos\\Task_Management\\Task_Management\\Task_Management.csproj",
+      "projectUniqueName": "C:\\Users\\madha\\TaskManagement-Application\\Task_Management\\Task_Management\\Task_Management.csproj",
       "projectName": "Task_Management",
-      "projectPath": "C:\\Users\\madha\\source\\repos\\Task_Management\\Task_Management\\Task_Management.csproj",
+      "projectPath": "C:\\Users\\madha\\TaskManagement-Application\\Task_Management\\Task_Management\\Task_Management.csproj",
       "packagesPath": "C:\\Users\\madha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\madha\\source\\repos\\Task_Management\\Task_Management\\obj\\",
+      "outputPath": "C:\\Users\\madha\\TaskManagement-Application\\Task_Management\\Task_Management\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -30,26 +30,32 @@ namespace Task_Management.Controllers
                             (t.DueDate.Value.Date == today || t.DueDate.Value.Date == tomorrow))
                 .ToListAsync();
 
+            int sentCount = 0;
+
             foreach (var task in dueTasks)
             {
-                string subject = "Reminder — Your task is nearing its due date";
-                string body = $@"
-Hi {task.AssignedTo},
+                if (task.AssignedTo == null || !task.AssignedTo.Any())
+                    continue;
+
+                foreach (var email in task.AssignedTo)
+                {
+                    string subject = "Reminder — Your task is nearing its due date";
+                    string body = $@"
+Hi {email},
 
 Task: {task.Title}
-is due on {task.DueDate:yyyy-MM-dd}.
+Due Date: {task.DueDate:yyyy-MM-dd}
 Priority: {task.Priority}
 
 Please complete or update the status in the Task Management app.
 ";
 
-                if (!string.IsNullOrEmpty(task.AssignedTo))
-                {
-                    await _emailService.SendEmailAsync(task.AssignedTo, subject, body);
+                    await _emailService.SendEmailAsync(email, subject, body);
+                    sentCount++;
                 }
             }
 
-            return Ok($"Sent {dueTasks.Count} reminder emails successfully!");
+            return Ok($"✅ Sent {sentCount} reminder emails successfully!");
         }
     }
 }

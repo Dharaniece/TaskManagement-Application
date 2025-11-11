@@ -25,6 +25,7 @@ namespace Task_Management.Controllers
             _passwordHasher = passwordHasher;
         }
 
+        // 🔹 REGISTER
         [HttpPost("register")]
         public IActionResult Register([FromBody] User user)
         {
@@ -33,8 +34,18 @@ namespace Task_Management.Controllers
                 if (_context.Users.Any(u => u.Email == user.Email))
                     return BadRequest("Email already in use.");
 
-                user.PasswordHash = _passwordHasher.HashPassword(user, user.PasswordHash);
-                user.Role ??= "User";
+                // Admin auto setup
+                if (user.Email.ToLower() == "dharaniprabhu10@gmail.com")
+                {
+                    user.Role = "Admin";
+                    user.PasswordHash = _passwordHasher.HashPassword(user, "123");
+                }
+                else
+                {
+                    user.Role = "User";
+                    user.PasswordHash = _passwordHasher.HashPassword(user, user.PasswordHash);
+                }
+
                 user.CreatedDate = DateTime.UtcNow;
 
                 _context.Users.Add(user);
@@ -48,6 +59,7 @@ namespace Task_Management.Controllers
             }
         }
 
+        // 🔹 LOGIN
         [HttpPost("login")]
         public IActionResult Login([FromBody] Login login)
         {
@@ -70,6 +82,7 @@ namespace Task_Management.Controllers
             }
         }
 
+        // 🔹 JWT Token Generation
         private string GenerateJwtToken(User user)
         {
             var claims = new[]
@@ -92,6 +105,24 @@ namespace Task_Management.Controllers
             );
 
             return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+
+        // 🔹 NEW: Get all user emails for task assignment suggestions
+        [HttpGet("users")]
+        public IActionResult GetAllUsers()
+        {
+            try
+            {
+                var users = _context.Users
+                    .Select(u => new { u.Email })
+                    .ToList();
+
+                return Ok(users);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Failed to fetch users: {ex.Message}");
+            }
         }
     }
 }
